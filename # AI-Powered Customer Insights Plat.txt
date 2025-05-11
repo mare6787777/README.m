@@ -1,0 +1,76 @@
+# AI-Powered Customer Insights Platform
+
+## Overview
+A serverless, intelligent contact form system that transforms basic customer messages into structured insights using NLP, AWS Lambda, and real-time analytics. Built entirely on AWS Free Tier services.
+
+---
+
+## Features
+
+### 🔍 Smart Categorisation with NLP
+- Uses Amazon Comprehend to extract sentiment and key phrases.
+- Auto-categorizes messages into 'Sales', 'Support', 'Complaint', etc.
+- Assigns priority scores based on sentiment and keyword matches.
+
+### 📊 Real-Time Analytics Dashboard
+- Stores enriched message data in S3.
+- Uses Athena for querying and QuickSight for visual dashboards.
+- Displays trends over time, sentiment distribution, and common topics.
+
+### 🔁 Mini Data Pipeline
+- Lambda acts as an ETL engine, cleaning and exporting data.
+- Supports batch analytics by regularly dumping DynamoDB contents to S3.
+
+### 🚨 Automated Alerts
+- CloudWatch monitors for spikes in negative sentiment.
+- SNS notifications can trigger alerts to email or Slack.
+
+---
+
+## Architecture
+
+**AWS Services Used:**
+- API Gateway
+- AWS Lambda (Python)
+- Amazon DynamoDB
+- Amazon Comprehend
+- Amazon S3
+- Amazon Athena
+- Amazon QuickSight
+- Amazon CloudWatch
+- Amazon SNS
+
+---
+
+## Why It Matters
+
+This project simulates a real-world transformation journey from legacy contact systems to modern, insight-driven, serverless platforms.
+
+### Benefits
+- No server management.
+- Real-time feedback and trends.
+- Scalable and cost-effective.
+- Practical AI use with clear business impact.
+
+---
+
+## Setup & Deployment
+
+1. Create S3 bucket for static website hosting.
+2. Deploy HTML/JS form to S3.
+3. Set up API Gateway with Lambda integration.
+4. Use DynamoDB for message storage.
+5. Call Amazon Comprehend within Lambda.
+6. Export to S3 and visualize with QuickSight.
+
+---
+
+## Future Improvements
+- Integrate with Slack or Teams.
+- Add IP-based geo tagging for regional insights.
+- Add user authentication (Amazon Cognito).
+
+---
+
+## Author
+BrightStart 2025 Candidate - Demonstrating skills in AI, Cloud, and Transformation Engineering.
